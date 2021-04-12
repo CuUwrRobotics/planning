@@ -1,0 +1,18 @@
+# This is how requests can be made to the controller prioritizer to grant a topic
+# on which the application can control of the robot.
+
+# After this returns, publish to the given topic name with a geometry_msgs/Vector3
+# mesage, containing the XYZ direction/velocity of motion from origin desired.
+
+# Request constants ############################################################
+uint8 TYPE_EMERGENCY     = 0    # Top priority
+uint8 TYPE_HUMAN_INPUT   = 1    # Controllers, etc
+uint8 TYPE_GENERAL       = 255  # Everything else
+
+# Request fields ###############################################################
+uint8 type
+string node_name # Name of the node, only used for human readability
+---
+# Response fields
+string topic_name # Topic name granted; this will be "" if topic could not be granted
+string error # Returns a human-readable error if topic_name was ""

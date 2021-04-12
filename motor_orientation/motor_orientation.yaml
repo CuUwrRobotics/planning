@@ -1,0 +1,55 @@
+# This file is used to configure the robot's motor plan (takes motion vector in,
+# outputs motor speeds) on startup
+motors:
+  plan:      "x" # Four sideways motors and two verticals
+  motors:
+    1:       # Front left
+      type:  "PWM"
+      pin:   "PWM1A_1"
+    2:       # Front right
+      type:  "PWM"
+      pin:   "PWM1A_2"
+    3:       # Back right
+      type:  "PWM"
+      pin:   "PWM1A_3"
+    4:       # Back left
+      type:  "PWM"
+      pin:   "PWM1A_4"
+    5:       # Back center
+      type:  "GPIO"
+      pin:   "GPIO1A_1"
+    6:       # Front center
+      type:  "GPIO"
+      pin:   "GPIO1A_2"
+
+# NOTE:      MOTOR PLAN "x":
+# 1:         # Front left
+#   pitch:   +45 # Angle from x-axis
+#   yaw:     +0 # Angle from y-axis
+#   type:    "PWM"
+#   pin:     "PWM1A_1"
+# 2:         # Front right
+#   pitch:   +135
+#   yaw:     +0
+#   type:    "PWM"
+#   pin:     "PWM1A_1"
+# 3:         # Back right
+#   pitch:   +225
+#   yaw:     +0
+#   type:    "PWM"
+#   pin:     "PWM1A_1"
+# 4:         # Back left
+#   pitch:   +315
+#   yaw:     +0
+#   type:    "PWM"
+#   pin:     "PWM1A_1"
+# 5:         # Back center
+#   pitch:   +0
+#   yaw:     +90
+#   type:    "GPIO"
+#   pin:     "GPIO1A_1"
+# 6:         # Front center
+#   pitch:   +0
+#   yaw:     +90
+#   type:    "GPIO"
+#   pin:     "GPIO1A_1"
