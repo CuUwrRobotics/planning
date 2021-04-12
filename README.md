@@ -1,3 +1,3 @@
-# **Not kept organized or up to date**.
+# **NOT KEPT ORGANIZED OR UP TO DATE**.
 
 Planning for the PiranhaBot software. 
