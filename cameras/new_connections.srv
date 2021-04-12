@@ -1,6 +1,6 @@
-# Service to create connection between input(s) and any process.
-# This can be used to connect a machine vision application to any known module
-# instance (i.e. a camera or running machine vision application)
+# Service to invoke and connect modules.
+# This can be used to connect any module application to any known invocation
+# (i.e. a camera or running machine vision application)
 
 string data_connection_json # Connection to make, see exmple below
 ---
@@ -12,15 +12,15 @@ string error_reason # Human-readable error if request is denied
 # to find out the names, etc
 # data_connection_json ############################################################
 # This is a dictionary with the following keys:
-# - `id`: The id of the module to create an instance of
-# - `inputs`: ORDERED array of IDs for the inputs. (already running instances)
+# - `id`: The id of the module to create an invocation of
+# - `inputs`: ORDERED array of IDs for the inputs. (already running invocations)
 # - `args`: dictionary of all defined arguments (will be used in the command line arguments, where key is the argument name)
 
-{
-  "id": "id-of-output-module",
-  "inputs": ["input-id-1", "id-2; ORDER MATTERS"],
-  "args": {
-    "g",
-    "value-for-g"
-  }
-}
+# {
+#   "id": "id-of-output-module",
+#   "inputs": ["input-id-1", "id-2; ORDER MATTERS"],
+#   "args": {
+#     "g",
+#     "value-for-g"
+#   }
+# }

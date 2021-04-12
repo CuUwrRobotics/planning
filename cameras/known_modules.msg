@@ -4,7 +4,7 @@
 # (which the program knows about via a config file).
 
 string modules_json # JSON string of all allowed modules, example below
-string instances_json # JSON string of all running instances, example below
+string instances_json # JSON string of all running instances (invocations), example below
 
 # EXAMPLE ######################################################################
 # modules_json #################################################################
@@ -40,14 +40,14 @@ string instances_json # JSON string of all running instances, example below
 # ]
 
 # instances_json ###############################################################
-# - `id` is the auto-generated UUID of the instance
-# - `module` is the auto-generated UUID of the module the instance was created on
+# - `id` is the auto-generated UUID of the invocation
+# - `module` is the auto-generated UUID of the module the invocation was created on
 # [{
 #   "id": "09asd87098a7sd9f87",
-#   "module": "9a8s7df987a" # instance of 'Coral Health'
+#   "module": "9a8s7df987a" # invocation of 'Coral Health'
 # },
 # {
 #   "id": "8as7rgwr",
-#   "module": "a-0ds8f09a8s9df" # instance of 'Photo'
+#   "module": "a-0ds8f09a8s9df" # invocation of 'Photo'
 # },
 # ]
