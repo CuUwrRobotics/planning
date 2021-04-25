@@ -2,7 +2,7 @@
     "name": "Cam 1",
     "description": "Back-right camera",
     "type": "input",
-    "inputs": ["/cam/1"] // topic is predefined
+    "inputs": ["/cam/1"] // camera number is predefined
   },
   {
     "name": "Coral Health",
